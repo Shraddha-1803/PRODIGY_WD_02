@@ -39,7 +39,8 @@ Stopwatch-Web-App/
 
 ##  Preview  
 
-Add your project screenshot here.
+![Uploading Screenshot 2026-04-30 002049.png…]()
+
 
 ---
 
