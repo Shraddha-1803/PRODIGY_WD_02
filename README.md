@@ -64,10 +64,8 @@ cd stopwatch-web-application
 
 ##  Live Demo  
 
-Add deployed link here after deployment:
-
 ```md
-https://your-live-demo-link.com
+https://shraddha-1803.github.io/PRODIGY_WD_02/
 ```
 
 ---
