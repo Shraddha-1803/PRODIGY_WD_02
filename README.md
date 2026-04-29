@@ -39,7 +39,7 @@ Stopwatch-Web-App/
 
 ##  Preview  
 
-![Uploading Screenshot 2026-04-30 002049.png…]()
+<img width="1919" height="912" alt="Screenshot 2026-04-30 002049" src="https://github.com/user-attachments/assets/e7b4ba06-fcf5-4c2f-a8ed-811ab6a8aec8" />
 
 
 ---
