@@ -55,7 +55,7 @@ git clone https://github.com/Shraddha-1803/PRODIGY_WD_02.git
 2. Open project folder  
 
 ```bash
-cd stopwatch-web-application>
+cd stopwatch-web-application
 ```
 
 3. Run `index.html` in browser  
