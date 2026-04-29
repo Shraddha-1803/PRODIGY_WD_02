@@ -48,7 +48,7 @@ Add your project screenshot here.
 1. Clone the repository  
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/Shraddha-1803/PRODIGY_WD_02.git
 ```
 
 2. Open project folder  
