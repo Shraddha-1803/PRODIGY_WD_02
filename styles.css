@@ -1,0 +1,244 @@
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #282c34;
+    margin: 0;
+    color: #ffffff;
+}
+
+.stopwatch {
+    text-align: center;
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-width: 300px;
+    width: 100%;
+}
+
+#display {
+    font-size: 48px;
+    margin-bottom: 20px;
+    background: #000;
+    color: #0f0;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+    box-shadow: inset 0 0 10px #0f0, 0 0 20px rgba(0, 255, 0, 0.5);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #3a3a3a, #1c1c1c);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(145deg, #5a5a5a, #3c3c3c);
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:disabled {
+    background: #555;
+    cursor: not-allowed;
+}
+
+#laps {
+    margin-top: 20px;
+    text-align: left;
+    max-height: 150px;
+    overflow-y: auto;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+}
+
+.lap {
+    padding: 5px 0;
+    border-bottom: 1px solid #555;
+} */
+
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+    color: #ffffff;
+    padding: 20px;
+}
+
+.stopwatch {
+    width: 100%;
+    max-width: 420px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 28px;
+    padding: 35px 30px;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+/* Timer Display */
+#display {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 35px 20px;
+    margin-bottom: 30px;
+    border-radius: 22px;
+    background: rgba(15, 23, 42, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow:
+        inset 0 0 20px rgba(255, 255, 255, 0.03),
+        0 8px 20px rgba(0, 0, 0, 0.25);
+    color: #38bdf8;
+}
+
+/* Buttons Container */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-bottom: 25px;
+}
+
+/* Buttons */
+button {
+    padding: 14px 18px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Individual Button Colors */
+#startBtn {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+#stopBtn {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+#resetBtn {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+#lapBtn {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+#clearLapsBtn {
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    opacity: 0.95;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* Lap Section */
+#laps {
+    margin-top: 10px;
+    max-height: 220px;
+    overflow-y: auto;
+    padding-right: 6px;
+}
+
+/* Custom Scrollbar */
+#laps::-webkit-scrollbar {
+    width: 6px;
+}
+
+#laps::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+/* Lap Item */
+.lap {
+    background: rgba(255, 255, 255, 0.06);
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #38bdf8;
+    animation: slideIn 0.3s ease;
+}
+
+/* Animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .stopwatch {
+        padding: 25px 20px;
+    }
+
+    #display {
+        font-size: 2.3rem;
+        padding: 25px 15px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+}
