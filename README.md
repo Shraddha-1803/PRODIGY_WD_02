@@ -7,13 +7,13 @@ This project provides accurate time tracking with lap recording and a clean prof
 
 ##  Features  
 
-- ▶️ Start stopwatch  
-- ⏸️ Pause stopwatch  
-- 🔄 Reset stopwatch  
-- 🏁 Record lap times  
-- 🗑️ Clear all laps  
-- 📊 Lap counter with latest lap displayed first  
-- 📱 Responsive design for desktop and mobile  
+- Start stopwatch  
+- Pause stopwatch  
+- Reset stopwatch  
+- Record lap times  
+- Clear all laps  
+- Lap counter with latest lap displayed first  
+- Responsive design for desktop and mobile  
 
 ---
 
